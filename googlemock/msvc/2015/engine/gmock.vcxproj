@@ -44,11 +44,13 @@
     <OutDir>$(ProjectDir)lib\win64\</OutDir>
     <IntDir>$(ProjectDir)intermediate\$(Platform)_$(Configuration)\</IntDir>
     <IncludePath>..\..\..\include;..\..\..;..\..\..\..\googletest\include;$(IncludePath)</IncludePath>
+    <TargetName>lib$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(ProjectDir)lib\win64\</OutDir>
     <IntDir>$(ProjectDir)intermediate\$(Platform)_$(Configuration)\</IntDir>
     <IncludePath>..\..\..\include;..\..\..;..\..\..\..\googletest\include;$(IncludePath)</IncludePath>
+    <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
